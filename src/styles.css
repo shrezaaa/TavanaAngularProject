@@ -26,7 +26,7 @@ button.btn:hover {
 
 .btn {
   display: inline-block;
-  font-weight: 400;
+  font-weight: 600;
   /*color: #212529;*/
   text-align: center;
   vertical-align: middle;
@@ -34,7 +34,7 @@ button.btn:hover {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  background-color: transparent;
+  /*background-color: transparent;*/
   border: 1px solid ;
   /*border-color: #212529;*/
   padding: .375rem .75rem;
@@ -42,6 +42,37 @@ button.btn:hover {
   line-height: 1.5;
   border-radius: .25rem;
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.btn-group > .btn:not(:first-child), .btn-group > .btn-group:not(:first-child) > .btn {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.btn-group > .btn, .btn-group-vertical > .btn {
+  position: relative;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+.dropdown-toggle {
+  white-space: nowrap;
+}
+
+.dropdown-toggle:empty::after {
+  margin-left: 0;
+}
+
+.dropdown-toggle::after {
+  display: inline-block;
+  margin-left: 0.255em;
+  vertical-align: 0.255em;
+  content: "";
+  border-top: 0.3em solid;
+  border-right: 0.3em solid transparent;
+  border-bottom: 0;
+  border-left: 0.3em solid transparent;
 }
 /* end for button  */
 
@@ -122,3 +153,4 @@ input {
   justify-content: space-between;
   padding: .5rem 1rem;
 }
+
