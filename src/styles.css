@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 /* start button */
 button.btn {
-  border: none;
+  /*border: none;*/
   /*background: #404040;*/
   /*color: #ffffff !important;*/
   font-weight: 100;
@@ -20,6 +20,28 @@ button.btn:hover {
   -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
   -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
   transition: all 0.3s ease 0s;
+
+}
+
+
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  /*color: #212529;*/
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid ;
+  /*border-color: #212529;*/
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 /* end for button  */
 
@@ -86,4 +108,17 @@ input {
   background-color: #e9ecef;
   border: 1px solid #ced4da;
   border-radius: .25rem;
+}
+
+.navbar {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: .5rem 1rem;
 }
